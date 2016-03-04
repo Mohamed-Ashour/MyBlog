@@ -1,0 +1,11 @@
+<% @blogs.each do |b| %>
+	<article>
+		<a href="blog/<%= b[:id] %>">
+			<h3><%= b[:title] %></h3>
+		</a>
+			<div class="blog-summary">
+				<p><%= b[:summary] %></p>
+			</div>
+	</article>
+	<hr>
+<% end %>

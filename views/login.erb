@@ -1,0 +1,10 @@
+<form method="post" action="/login">
+	<% if @error %>
+		<h3>Wrong user or password</h3>
+	<% end %>
+	<label for="username">User Name:</label>
+	<input type="text" name="username" class="login-text" autofocus id="username">
+	<label for="password">Password:</label>
+	<input type="password" name="password" class="login-text" id="password">
+	<button type="submit" class="login-button">Login</button>
+</form>

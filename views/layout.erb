@@ -1,0 +1,123 @@
+<!DOCTYPE html>	
+<html>
+<head>
+	<title>blogy</title>
+	<link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+	<style>
+		body {
+			margin: 0;
+			padding: 0;
+			font-family: 'Roboto', sans-serif;
+			text-align: justify;
+			color: #484747;
+		}
+		input,
+		textarea {
+			display: block;
+			width: 100%;
+			margin-bottom: 1.5em;
+			font-size: 1.05em;
+			font-family: inherit;
+		}
+		input {
+			height: 1.3em;
+			font-weight: bold;
+		}
+		button {
+			width: 7em;
+			height: 2.7em;
+			display: block;
+			margin: 0 auto;
+		}
+		.login-text {
+			width: 30%;
+			font-size: 1em;
+			font-weight: normal;
+		}
+		.login-button {
+			margin: 0;
+			width: 5.5em;
+			height: 2.5em
+		}
+		h1 {
+			margin: 0;
+		}
+		h2 {
+			margin-bottom: 2em;
+			font-size: 1.7em;
+		}
+		
+		a {
+			color: #c0392b;
+			text-decoration: none;
+		}
+		img {
+			display: block;
+			margin: 1em 0;
+			width: 100%;
+		}
+		.logo {
+			display: inline;
+			width: auto;
+			margin: 0;
+		}
+		.side-bar {
+			width: 25%;
+			position: fixed;
+			right: 0;
+			top: 0;
+			bottom: 0;
+			background-color: #c0392b;
+			text-align: center;
+			color: white;
+			padding:  10% 0 0 0;
+			box-shadow: 3px 0 20px 2px black;
+		}
+		.side-bar a ,
+		.side-bar p {
+			color: white;
+		}
+		.container{
+			width: 50%;
+			margin-left: 10%;
+			padding: 2em;
+		}
+		a[href="/admin"] {
+			display: block;
+			margin-top: 3em;
+		}
+		.side-bar p {
+			margin-top: 78%;
+		}
+		hr {
+			margin: 2.5em 0;
+		}
+		.btn {
+			padding: .5em 0;
+			background-color: #c0392b;
+			color: white;
+			width: 20%;
+			display: inline-block;
+			margin-left: 1.3em;
+			margin-bottom:1em;
+			text-align: center;
+		}
+		.admin-blog{
+			margin-bottom: .5em;
+		}
+	</style>
+</head>
+<body>
+	<div class="side-bar">
+		<a href="/">
+			<img src="http://www.bdnia.com/wp-content/uploads/nike-white.png" width="100px" height="100px" class="logo">
+			<h1>My Blog</h1>
+		</a>
+		<a href="/admin">Admin</a>
+		<p>&copy; Mohamed ashour</p>
+	</div>
+	<div class="container">
+		<%= yield %>
+	</div>
+</body>
+</html>

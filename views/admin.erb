@@ -1,0 +1,15 @@
+<a href="/admin/add_blog" class="btn">Add blog</a>
+
+<a href="/logout" class="btn">Logout</a>
+<ul class="admin-blogs">
+	<% @blogs.each do |b| %>
+		<li class="admin-blog">
+			(
+			<a href="/admin/edit_blog/<%= b[:id] %>">Edit blog</a>
+			|
+			<a href="/admin/delete_blog/<%= b[:id] %>">Delete blog</a>
+			)
+			<%= b[:title] %>
+		</li>
+	<% end %>
+</ul>
